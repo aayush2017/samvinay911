@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animate - JQuery</title>
+</head>
+<body>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="fadeOut">FadeOut</button>
+<button id="fadeIn">FadeIn</button>
+<button id="slideUp">SlideUp</button>
+<button id="slideDown">SlideDown</button>
+<button id="animate">Animate</button>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#hide").click(function() {
+		$("#p1").hide(1000);
+	});
+	$("#show").click(function() {
+		$("#p1").show(1000);
+	});
+	$("#fadeOut").click(function() {
+		$("#p1").fadeOut(1000);
+	});
+	$("#fadeIn").click(function() {
+		$("#p1").fadeIn(1000);
+	});
+	$("#slideUp").click(function() {
+		$("#p1").slideUp(1000);
+	});
+	$("#slideDown").click(function() {
+		$("#p1").slideDown(1000);
+	});
+	$("#animate").click(function() {
+		$("#p1").animate({ 
+			width: "70%",
+			opacity: 0.4,
+			marginLeft: "0.6in",
+			fontSize: "3em", 
+			borderWidth: "10px"
+		}, 1500 );
+	});
+});
+</script>
+</body>
+</html>
